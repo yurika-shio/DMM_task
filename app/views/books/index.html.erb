@@ -1,0 +1,57 @@
+<html>
+<header>
+<div class="book-flash">
+    <%= h(flash[:success]) %>
+  </div>
+
+<h1>Books</h1>
+</header>
+
+<table class="all" border="0" cellpadding="6" cellspacing="5">
+
+	<tr class= "title">
+		<th style="width:150px">Title</th>
+		<th style="width:300px">Body</th>
+		<th style="width:30px"></th>
+		<th style="width:30px"></th>
+		<th style="width:40px"></th>
+	</tr>
+
+	<% @books.each do |book| %>
+	<tr class= "body">
+		<td><%= book.title %></td>
+		<td><%= book.body %></td>
+		<td  class="line-category"><%= link_to "Show", book_path(book) %></td>
+		<td class="line-category2">
+	<%= link_to "Edit", edit_book_path(book) %></td>
+	   <td class="line-category3">
+    <%= link_to "Destroy", book_path(book), method: :delete, data:
+{ confirm: '本当に削除して良いですか?',
+  cancel: 'やめる',
+  commit: '削除する'}, title: '削除確認' %></td>
+    </tr><% end %>
+</table>
+
+
+
+<footer>
+<h2>New book</h2>
+
+<%= form_for(@book) do |f| %>
+<%= render partial: "layouts/error_messages", model: f.object %>
+
+<p class="category-title">Title</p>
+<%= f.text_field :title %>
+
+<p class="category-title">Body</p>
+<%= f.text_area :body %>
+
+<%= f.submit 'Create Book' %>
+
+<% end %>
+
+</footer>
+
+</html>
+
+

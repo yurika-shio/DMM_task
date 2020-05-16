@@ -1,0 +1,16 @@
+<div class="book-fla">
+    <%= h(flash[:success]) %>
+  </div>
+<div class="book-show">
+      <p class="show-title">Title: </p>
+      <p class="show"><%= @book.title %></p></div>
+<div class="book-show2">
+      <p class="show-body">Body: </p>
+      <p class="show"><%= @book.body %></p></div>
+
+
+
+      <div class="line">
+        <p class="line-edit"><%= link_to "Edit", edit_book_path(@book) %></p> |
+      <p class="line-back"><%= link_to "Back", books_path(@books) %></p>
+    </div>

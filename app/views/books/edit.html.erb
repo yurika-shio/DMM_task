@@ -1,0 +1,24 @@
+<footer>
+<h2>Editing Book</h2>
+
+<%= form_for(@book) do |f| %>
+<%= render partial: "layouts/error_messages", model: f.object %>
+
+
+<p class="category-title">Title</p>
+<%= f.text_field :title %>
+
+<p class="category-title">Body</p>
+<%= f.text_area :body %>
+
+<%= f.submit 'Update Book' %>
+
+<% end %>
+
+</footer>
+
+
+	 <div class="line">
+        <p class="line-show"><%= link_to "Show", book_path(@book) %></p> |
+      <p class="line-back"><%= link_to "Back", books_path(@books) %></p>
+      </div>

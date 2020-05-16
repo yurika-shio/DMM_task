@@ -1,0 +1,174 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: black;
+}
+a{
+	text-decoration: none;
+  font-family: sans-serif;
+}
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.top-title{
+	width:800px;
+  padding: 25px 35px;
+
+}
+.top-title-headline{
+	font-size: 27px;
+	font-weight: bold;
+}
+.top-body{
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+.top-body-headline{
+  font-size: 14px;
+  font-family: sans-serif;
+}
+.top-body-headline2{
+  font-size: 14px;
+  font-family: sans-serif;
+  line-height: 5em;
+}
+
+header {
+  width:800px;
+  padding: 15px 0px 10px 30px;
+  font-family: sans-serif;
+}
+table {
+  width:800px;
+  padding: 0px 0px 25px 30px;
+  font-family: sans-serif;
+}
+.title {
+  font-size: 14px;
+  font-family: sans-serif;
+  text-align: center;
+}
+.body {
+  font-size: 14px;
+  font-family: sans-serif;
+  text-align: left;
+}
+.category-title{
+   font-size: 12px;
+  font-family: sans-serif;
+  text-align: left;
+}
+.line-category {
+  font-size: 14px;
+  font-family: sans-serif;
+  text-decoration: underline;
+   text-align: center;
+}
+.line-category2 {
+  font-size: 14px;
+  font-family: sans-serif;
+  text-decoration: underline;
+   text-align: center;
+}
+.line-category3 {
+  font-size: 14px;
+  font-family: sans-serif;
+  text-decoration: underline;
+   text-align: center;
+}
+
+footer {
+  width: 200px;
+  margin: 20px 0px 10px 30px;
+  font-family: sans-serif;
+  line-height: 1.5em;
+}
+.line {
+  width: 800px;
+  margin: 0px 25px;
+}
+.line-start {
+  font-family: sans-serif;
+  text-decoration: underline;
+}
+.line-edit {
+  font-size: 14px;
+  font-family: sans-serif;
+  text-decoration: underline;
+  display: inline-block;
+}
+.line-back {
+  font-size: 14px;
+  font-family: sans-serif;
+  text-decoration: underline;
+  display: inline-block;
+}
+.line-show {
+  font-size: 14px;
+  font-family: sans-serif;
+  text-decoration: underline;
+  display: inline-block;
+}
+.book-fla {
+  width:800px;
+  padding: 25px 0px 10px 80px;
+  font-family: sans-serif;
+  color: green;
+}
+.book-flash {
+  width:800px;
+  padding: 5px 0px 5px 0px;
+  font-family: sans-serif;
+  color: green;
+}
+.book-show {
+  width:400px;
+  padding: 10px 50px;
+  font-family: sans-serif;
+  line-height: 3em;
+}
+.book-show2 {
+  width:400px;
+  padding: 10px 50px;
+  font-family: sans-serif;
+  line-height: 3em;
+}
+.show-title {
+font-weight: bold;
+display: inline-block;
+}
+.show {
+display: inline-block;
+}
+
+.show-body {
+font-weight: bold;
+display: inline-block;
+
+}
+
+
+
+
+
